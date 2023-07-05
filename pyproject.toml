@@ -34,7 +34,8 @@ dependencies = [
     "scipy",
     "astropy",
     "matplotlib",
-    "fastavro"
+    "fastavro",
+    "avro"
 ]
 
 [project.urls]
