@@ -38,22 +38,6 @@ python -m ipykernel install --user --name=snowshovel
 ```
 This ensures that the python environment is available.
 
-## Set up the correct path
-
-You will need to do this each time you start a new terminal session.
-
-### Unix (Linux/MacOS)
-
-```bash
-export SNOWSHOVEL_DATA_DIR=/path/to/data
-```
-
-### Windows
-
-```bash
-set SNOWSHOVEL_DATA_DIR=/path/to/data
-```
-
 ## Using the code
 
 ### Start a jupyter notebook
@@ -66,3 +50,4 @@ jupyter notebook
 ```
 
 This should open up a jupyter notebook in your browser. 
+You should open up the notebook called `intro.ipynb`.
