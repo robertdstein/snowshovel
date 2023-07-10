@@ -7,20 +7,26 @@ Firstly, start downloading some test data from e.g: https://ztf.uw.edu/alerts/pu
 ### Clone from Github
 
 ```bash
-git clone git@github.com:robertdstein/snowshovel.git
+git clone https://github.com/robertdstein/snowshovel.git
 ```
 
-### Create a clean virtual environment, using conda
+### Conda
+
+Either use the conda command line:
+
+#### Create a clean virtual environment, using conda
 
 ```bash
 conda create python=3.11 -n snowshovel
 ```
 
-### Activate the virtual environment
+#### Activate the virtual environment
 
 ```bash
 conda activate snowshovel
 ```
+
+Althernative
 
 ### Install the requirements
 
