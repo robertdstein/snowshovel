@@ -1,5 +1,7 @@
 # snowshovel
 
+Summer iNthernship On Winter, Software using gitHub Of Variables & transiEnts anaLysis
+
 ## Install instructions
 
 Firstly, start downloading some test data from e.g: https://ztf.uw.edu/alerts/public/ztf_public_20230609.tar.gz
