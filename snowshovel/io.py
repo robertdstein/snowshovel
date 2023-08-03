@@ -9,17 +9,27 @@ from avro.io import DatumReader
 from tqdm import tqdm
 
 
-def read_single_alert(path: Path) -> DataFileReader:
+def read_single_alert(path: Path) -> dict:
     """
     Function to read avro alerts
 
     :param path: Path to the files
-    :return: Avro dict
+    :return: Dictionary containing 'candidate' and 'objectId' keys
     """
     with open(path, 'rb') as f:
         freader = DataFileReader(f, DatumReader())
-        return next(freader)['candidate']
+        avro_data = next(freader)
 
+    # extract 'candidate' and 'objectId' from the Avro data
+    candidate = avro_data['candidate']
+    object_id = avro_data['objectId']
+
+    # create a new dictionary with all the data from 'candidate' and add 'objectId' as a new key
+    candidate_with_object_id = candidate.copy()
+    candidate_with_object_id['objectId'] = object_id
+
+    # return the merged dictionary
+    return candidate_with_object_id
 
 def parse_alerts(data_dir: Path, n_to_read: int | None = None) -> pd.DataFrame:
     """
