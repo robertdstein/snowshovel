@@ -1,6 +1,6 @@
 # snowshovel
 
-Summer iNthernship On Winter, Software using gitHub Of Variables & transiEnts anaLysis
+Summer iNternship On Winter, Software using gitHub Of Variables & transiEnts anaLysis
 
 ## Install instructions
 
